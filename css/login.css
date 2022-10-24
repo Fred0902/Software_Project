@@ -1,0 +1,45 @@
+h1{
+    margin-bottom: 100px;
+}
+.icon{
+    display: none;
+    text-align: center;
+    font-size: 100px;
+    color: var(--font_orange);
+}
+.fa{
+    margin-bottom: 40px;
+}
+.icon span{
+    font-size: 40px;
+}
+span.font1{
+    display: inline-block;
+    animation: updown 3.2s infinite ease-in-out;
+}
+span.font2{
+    display: inline-block;
+    animation: updown 3.2s .5s infinite ease-in-out;
+}
+span.font3{
+    display: inline-block;
+    animation: updown 3.2s 1.5s infinite ease-in-out;
+}
+
+
+/* 加上block可以開關定位中區塊 */
+.icon.block{
+    display: block;
+}
+/* 字體跳動動畫 */
+@keyframes updown {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
